@@ -1,149 +1,240 @@
+/* Global Styles */
+body {
+    display: flex;
+    /* Use flexbox layout for body */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+    flex-wrap: wrap;
+    /* Allow content to wrap */
+    min-height: 100vh;
+    /* Set minimum height to viewport height */
+    padding: 50px;
+    /* Add some padding around the content */
+    background: hsl(30, 38%, 92%);
+    /* Set background color */
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat font */
+    margin: 0;
+    /* Remove default margin */
+    padding: 10px;
+    /* Add additional padding */
+}
+
+h2 {
+    font-weight: 500;
+    /* Set font weight */
+    text-transform: uppercase;
+    /* Transform text to uppercase */
+    color: hsl(228, 12%, 48%);
+    /* Set text color */
+    font-size: 16px;
+    /* Set font size */
+    padding-bottom: 2px;
+    /* Add padding at the bottom */
+    margin-bottom: 2px;
+    /* Add margin at the bottom */
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    /* Use Fraunces font for h1 */
+    color: hsl(212, 21%, 14%);
+    /* Set text color */
+    margin-top: 10px;
+    /* Add margin at the top */
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    /* Set text color */
+    padding-bottom: 10px;
+    /* Add padding at the bottom */
+    word-spacing: 5px;
+    /* Set word spacing */
+    font-size: 14px;
+    /* Set font size */
+}
 
 
+button {
+    width: 100%;
+    /* Set button width to 100% */
+    display: flex;
+    /* Use flexbox layout for button */
+    padding: 15px;
+    /* Add padding */
+    justify-content: center;
+    /* Center content horizontally */
+    color: hsl(0, 0%, 100%);
+    /* Set text color */
+    background: hsl(158, 36%, 37%);
+    /* Set background color */
+    border: none;
+    /* Remove border */
+    border-radius: 10px;
+    /* Add rounded corners */
+    font-size: 16px;
+    /* Set font size */
+    font-family: 'Montserrat', sans-serif;
+    /* Use Montserrat font */
+}
+
+
+button:hover {
+    cursor: pointer;
+    /* Change cursor on hover */
+    background: hsl(158, 82%, 13%);
+    /* Change background color on hover */
+}
+
+button img {
+    width: 15px;
+    /* Set image width */
+    padding: 0px 10px;
+    /* Add padding around image */
+}
+
+.big {
+    font-weight: bold;
+    /* Set font weight */
+    font-family: 'Fraunces', serif;
+    /* Use Fraunces font for .big */
+    font-size: 30px;
+    /* Set font size */
+    color: hsl(158, 36%, 37%);
+    /* Set text color */
+    margin-right: 25px;
+    /* Add margin on the right */
+}
+
+.small {
+    text-decoration: line-through;
+    /* Add line-through decoration */
+    color: hsl(228, 12%, 48%);
+    /* Set text color */
+}
 
 .attribution {
-    font-size: 11px;
+    font-size: 16px;
+    /* Set font size for attribution */
     text-align: center;
-  }
+    /* Center-align the text in attribution */
+}
 
-  .attribution a {
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 50px;
-    background: hsl(30, 38%, 92%);
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 10px;
+    /* Set color for links inside attribution */
 }
 
+/* Mobile styles */
 
-main{
-    width: 100%;
-    background: hsl(0, 0%, 100%);
-    border-radius: 10px;
-    /* margin: 10px; */
-}
-
-.image{
-    content: url(../images/image-product-mobile.jpg);
-    width: 100%;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-.content{
+main {
     width: 90%;
-    margin: 0 20px 20px 15px;
-    padding-right: 10px;
-}
-
-button:hover{
-    cursor: pointer;
-    background: hsl(158, 82%, 13%);
-}
-
-button img{
-    width: 15px;
-    padding: 0px 10px; 
-}
-
-
-
-h2{
-    font-weight: 500;
-    text-transform: uppercase;
-    color: hsl(228, 12%, 48%);
-    font-size: 16px;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
-}
-
-h1{
-    font-family: 'Fraunces', serif;
-    color: hsl(212, 21%, 14%);
-    margin-top: 10px;
-}
-
-p{
-    color: hsl(228, 12%, 48%);
-    padding-bottom: 10px;
-    word-spacing: 5px;
-    font-size: 14px;
-}
-
-.big{
-    font-weight: bold;
-    font-family: 'Fraunces', serif;
-    font-size: 30px;
-    color: hsl(158, 36%, 37%);
-    margin-right: 25px;
-}
-
-.small{
-    text-decoration: line-through;
-    color: hsl(228, 12%, 48%);
-}
-
-button{
-    width: 100%;
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    color: hsl(0, 0%, 100%);
-    background: hsl(158, 36%, 37%);
-    border: none;
+    /* Set main content width */
+    background: hsl(0, 0%, 100%);
+    /* Set background color */
     border-radius: 10px;
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+    /* Add rounded corners */
+    margin: 10px;
+    /* Add margin around main content */
 }
 
+.image {
+    content: url(../images/image-product-mobile.jpg);
+    /* Set mobile image content */
+    border-top-right-radius: 10px;
+    /* Add rounded corner to top right */
+    border-top-left-radius: 10px;
+    /* Add rounded corner to top left */
+    width: 100%;
+    /* Set image width to 100% */
+}
 
+.content {
+    width: 90%;
+    /* Set content width */
+    margin: 0 20px 20px 15px;
+    /* Set margins */
+    padding-right: 10px;
+    /* Add padding to the right */
+}
 
+/* Desktop Styles */
 @media screen and (min-width: 600px) {
-    main{
+
+    body {
         display: flex;
-        padding: 0;
+        flex-flow: column wrap;
+        /* Change to column layout with wrapping */
     }
-    
-    figure{
+
+    main {
+        width: fit-content;
+        /* Set main content width to fit its content */
+        display: flex;
+        /* Use flexbox layout */
+        padding: 0;
+        /* Remove padding */
+        margin-bottom: 20px;
+        /* add margin to the bottom to give the footer some space*/
+    }
+
+    figure {
         margin: 0;
+        /* Remove margin */
         padding: 0;
+        /* Remove padding */
     }
-    
-    img{
-        width:50%;
+
+    .image {
+        content: url(../images/image-product-desktop.jpg);
+        /* Set desktop image content */
+        width: 50%;
+        /* Set image width to 50% */
+        border-top-right-radius: 0;
+        /* Remove top-right border radius */
         border-top-left-radius: 15px;
+        /* Add top-left border radius */
         border-bottom-left-radius: 15px;
+        /* Add bottom-left border radius */
     }
-    
-    section{
+
+    section {
         display: flex;
+        /* Use flexbox layout */
         background: hsl(0, 0%, 100%);
+        /* Set background color */
         border-radius: 15px;
-        width: 600px;
-    }   
-    
-    .content{
+        /* Add rounded corners */
+        width: 550px;
+        /* Set section width */
+    }
+
+    .content {
         margin: 0px 10px;
+        /* Set margins */
         padding: 10px 20px;
+        /* Set padding */
     }
 
-    h1{
+    h1 {
         padding-bottom: 5px;
-    width: 200px;
-    font-size: 30px;
+        /* Add padding at the bottom */
+        width: 200px;
+        /* Set width */
+        font-size: 30px;
+        /* Set font size */
     }
 
-    p{
+    p {
         font-size: 14px;
+        /* Set font size */
     }
 
-    button{
+    button {
         margin: 30px 0px;
+        /* Set margins */
     }
 }
